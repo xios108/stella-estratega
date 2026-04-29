@@ -2,32 +2,25 @@ import './App.css';
 
 const actionCards = [
   {
-    title: 'MIRA MI CLASE',
+    title: 'STELLA ESTRATEGA',
     subtitle: 'Aprende el Sistema del Creador Inteligente y hazte viral',
     href: 'https://www.youtube.com/',
-    image: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=900&q=80',
-    imageAlt: 'Smartphone mostrando una aplicacion',
+    image: '/images/stella-logo.png',
+    imageAlt: 'Stella Estratega logo neon',
   },
   {
-    title: 'HAILOU APP',
-    subtitle: 'Echa un vistazo a Hailou y descarga la app ahora',
-    href: 'https://www.apple.com/app-store/',
-    image: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=900&q=80',
-    imageAlt: 'Smartphone mostrando una aplicacion',
+    title: 'TRABAJA DESDE CASA',
+    subtitle: 'Desde su WhatsApp aprovecha la Inteligencia Artificial',
+    href: 'https://www.whatsapp.com/',
+    image: '/images/trabaja-desde-casa.png',
+    imageAlt: 'Mujer trabajando desde casa',
   },
   {
-    title: 'PRUEBA MINIMAX',
-    subtitle: 'Crea voces realistas con IA en minutos',
-    href: 'https://www.minimax.io/',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80',
-    imageAlt: 'Pantalla con degradado y tecnologia',
-  },
-  {
-    title: 'MI CANAL YOUTUBE',
-    subtitle: 'Aprende mas aqui con tutoriales paso a paso',
-    href: 'https://www.youtube.com/',
-    image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=80',
-    imageAlt: 'Pantalla con icono de reproduccion',
+    title: 'ZONA VIP',
+    subtitle: 'Acceso exclusivo a contenido premium y estrategias avanzadas',
+    href: 'https://ejemplo.com/vip',
+    image: '/images/zona-vip.png',
+    imageAlt: 'Zona VIP neon azul',
   },
 ];
 
@@ -38,8 +31,8 @@ function App() {
         <header className="hero-block">
           <img
             className="hero-image"
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80"
-            alt="Persona trabajando con laptop y microfono"
+            src="/images/portada.png"
+            alt="Mujer profesional en traje rosa neon"
           />
           <div className="hero-overlay" />
           <div className="hero-content">
