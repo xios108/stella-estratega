@@ -669,6 +669,8 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   gap: 8px;
   color: var(--text);
 }
