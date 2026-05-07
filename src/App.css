@@ -1,5 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@500;700;800&family=Yellowtail&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg: #09070b;
   --panel: #110d15;

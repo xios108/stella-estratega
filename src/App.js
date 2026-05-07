@@ -68,6 +68,7 @@ function App() {
         message: 'Registro enviado. Revisa tu correo para confirmar el acceso.',
       });
       setRegisterData({ name: '', email: '' });
+      window.open('https://chat.whatsapp.com/GBQ4Ml62aSJLszyrccpYpc', '_blank');
     } catch (error) {
       console.error('EmailJS error:', error);
       setFormStatus({
@@ -136,7 +137,7 @@ function App() {
               </ul>
 
               <div className="hero-cta-col">
-                <a className="cta-button cta-hero" href="https://chat.whatsapp.com/GBQ4Ml62aSJLszyrccpYpc" target="_blank" rel="noreferrer">
+                <a className="cta-button cta-hero" href="#registro">
                   <span className="cta-wa-logo" aria-hidden="true">💬</span>
                   <span className="cta-text">
                     <span className="cta-line1">QUIERO APRENDER A</span>
@@ -271,7 +272,7 @@ function App() {
 
           {/* CTA inferior */}
           <div className="filter-cta-row">
-            <a className="cta-button filter-cta-btn" href="https://chat.whatsapp.com/GBQ4Ml62aSJLszyrccpYpc" target="_blank" rel="noreferrer">
+            <a className="cta-button filter-cta-btn" href="#registro">
               <span className="cta-wa-logo" aria-hidden="true">💬</span>
               <span className="cta-text">
                 <span className="cta-line1">QUIERO ENTRAR Y APRENDER</span>
@@ -297,7 +298,7 @@ function App() {
         </section>
 
         {/* SECCIÓN 4 — Formulario de registro */}
-        <section className="register-section" aria-label="Formulario de registro">
+        <section id="registro" className="register-section" aria-label="Formulario de registro">
           <div className="register-form-col">
             <p className="register-eyebrow">Estás a un paso de entrar.</p>
             <h2>
