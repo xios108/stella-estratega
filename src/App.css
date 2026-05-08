@@ -23,24 +23,33 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Manrope', sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at 12% 14%, rgba(229, 171, 65, 0.15), transparent 34%),
     radial-gradient(circle at 86% 8%, rgba(255, 45, 155, 0.2), transparent 38%),
     linear-gradient(180deg, #09070b 0%, #050408 100%);
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .landing-page {
   min-height: 100vh;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-user-select: none;
 }
 
 .landing-shell {
-  width: min(780px, 100%);
+  width: 100%;
+  max-width: 780px;
   margin: 0 auto;
   display: grid;
   gap: 0;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -58,6 +67,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .hero-shade {
@@ -71,8 +82,10 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(520px, 100%);
+  width: 100%;
+  max-width: 520px;
   padding: 24px 20px 28px;
+  box-sizing: border-box;
 }
 
 .hero-top-row {
@@ -218,6 +231,9 @@ body {
   gap: 12px;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .cta-button::before {
@@ -303,6 +319,9 @@ body {
     radial-gradient(circle at 25% 0, rgba(255, 45, 155, 0.13), transparent 45%),
     linear-gradient(180deg, #120e18, #0a070e);
   padding: 22px 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .live-banner h2 {
@@ -335,6 +354,8 @@ body {
 .section2-wrapper {
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Banner fechas */
@@ -347,6 +368,8 @@ body {
   border: 2px solid var(--pink);
   border-radius: 14px;
   background: rgba(255, 45, 155, 0.04);
+  box-sizing: border-box;
+  max-width: calc(100% - 40px);
 }
 
 .classes-banner__icon {
@@ -410,14 +433,15 @@ body {
 }
 
 .video-placeholder-card {
-  margin: 0;
+  margin: 0 20px;
   border-radius: 12px;
   overflow: hidden;
   border: 2px solid var(--stroke);
   background: #08070a;
   position: relative;
   aspect-ratio: 16 / 10;
-  margin: 0 20px;
+  box-sizing: border-box;
+  max-width: calc(100% - 40px);
 }
 
 .video-placeholder-card img {
@@ -640,6 +664,9 @@ body {
   padding: 20px 20px 0;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Caja con borde rosa */
@@ -650,10 +677,13 @@ body {
   border-radius: 16px;
   overflow: hidden;
   background: #0d0a10;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .filter-col {
   padding: 20px 18px;
+  box-sizing: border-box;
 }
 
 .filter-col--yes {
@@ -844,10 +874,13 @@ body {
   grid-template-columns: 1fr;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .register-form-col {
   padding: 28px 20px 24px;
+  box-sizing: border-box;
 }
 
 .register-eyebrow {
@@ -892,6 +925,10 @@ body {
   border: 1.5px solid rgba(255,255,255,0.25);
   background: rgba(255,255,255,0.04);
   transition: border-color 0.2s;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 10px;
 }
 
 .reg-input-wrap:focus-within {
@@ -912,6 +949,8 @@ body {
   color: var(--text);
   font-family: 'Manrope', sans-serif;
   font-size: 0.98rem;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
 }
 
 .reg-input-wrap input::placeholder {
@@ -933,6 +972,9 @@ body {
   font-size: 1.05rem;
   border-radius: 14px;
   box-shadow: 0 0 28px rgba(53,190,75,0.55), 0 0 60px rgba(53,190,75,0.2);
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .reg-cta-btn:disabled {
@@ -979,6 +1021,7 @@ body {
   display: grid;
   gap: 22px;
   align-content: center;
+  box-sizing: border-box;
 }
 
 .reg-benefit {
@@ -1030,6 +1073,9 @@ body {
   padding: 20px 20px;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .emotional-push__box {
@@ -1040,6 +1086,8 @@ body {
   border-radius: 16px;
   overflow: hidden;
   background: #0d0a12;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .emotional-push__heart-col {
@@ -1113,6 +1161,9 @@ body {
   background: #09070b;
   padding: 24px 12px;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .clarity-grid {
@@ -1122,6 +1173,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
+  box-sizing: border-box;
 }
 
 .clarity-item {
@@ -1186,6 +1238,9 @@ body {
   padding: 20px 20px;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .process-box {
@@ -1195,6 +1250,8 @@ body {
   background: #0d0a12;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .process-check {
@@ -1288,6 +1345,9 @@ body {
   padding: 20px 20px;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .cta-wa-box {
@@ -1301,6 +1361,8 @@ body {
     radial-gradient(circle at 10% 50%, rgba(53,190,75,0.1), transparent 50%),
     #0a0d0b;
   box-shadow: 0 0 30px rgba(53,190,75,0.15);
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .cta-wa-icon {
@@ -1382,6 +1444,9 @@ body {
   padding: 24px 20px;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .inside-section h2 {
@@ -1441,6 +1506,9 @@ body {
   padding: 20px 20px 32px;
   background: #09070b;
   border-top: 1px solid var(--stroke);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .closing-box {
@@ -1452,6 +1520,8 @@ body {
   overflow: hidden;
   background: #0d0a12;
   margin-bottom: 16px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .closing-heart {
